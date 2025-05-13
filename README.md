@@ -7,7 +7,7 @@ Foi desenvolvido utilizando apenas tecnologias web: **HTML, CSS e JavaScript**.
 
 ## 🚀 Acesse o site
 
-👉 [Clique aqui para ver online[(https://marina-germano.github.io/Portifolio)]
+👉 [Clique aqui para ver online](https://marina-germano.github.io/Portifolio)
 
 
 ## 🛠 Tecnologias usadas
