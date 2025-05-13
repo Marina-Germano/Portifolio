@@ -1,1 +1,23 @@
-# Portifolio
+# 🌐 Portfólio Pessoal
+
+Este é meu site portfólio pessoal, onde apresento meus projetos, habilidades e formas de contato. 
+Foi desenvolvido utilizando apenas tecnologias web: **HTML, CSS e JavaScript**.
+
+link: https://marina-germano.github.io/Portifolio/
+
+
+## 🚀 Acesse o site
+
+👉 [Clique aqui para ver online[(https://marina-germano.github.io/Portifolio/)]
+
+
+## 🛠 Tecnologias usadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+
+## ✉️ Contato
+
+💼 [LinkedIn](https://www.linkedin.com/in/marina-germano)
