@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev Marina | Portifólio</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+
+            <img class="img-perfil" src="./img/perfil.jpeg" alt="foto da Marina">
+            <h1>Marina Germano</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedora Full Stack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-cx">
+            <p class="sobre-p">
+                Olá! Sou uma desenvolvedora full stack, apaixonada por transformar ideias em soluções funcionais. 
+                Gosto de criar códigos que não só resolvem problemas, mas também tornam a navegação mais intuitiva e 
+                a experiência do usuário mais agradável. Acredito que tecnologia bem feita é aquela que passa despercebida 
+                — porque simplesmente funciona.
+            </p>
+        </div>
+    </section>
+    <section id="projetos" class="sobre">           <!--mesma classse pq vai ser as mesmas medidas--->>
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+        <div class="projetos-cx">
+            <div class="projetos-card">
+                <a href="https://marina-germano.github.io/Conversor-de-Moeda/">
+                <img src="./img/conversorMoeda.png" alt="conversor" class="projetos-img"></a>
+                <div class="cx-tx-proj">
+                    <h3 class="info-projetos">Conversor de Moedas</h3>
+                    <p class="p-projetos">Aplicativo de conversão de moedas com taxas em tempo real e interface intuitiva</p>
+                </div>
+            </div>
+
+                <div class="projetos-card">
+                <img src="./img/carro.webp" alt="carro vermelho" class="projetos-img">
+                <div class="cx-tx-proj">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="p-projetos">Ainda em desenvolvimento</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="sobre">  <!--mesma classe pq vai as mesmas medidas-->>
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="form-contato" id="fom" onsubmit="enviarWats(event)">
+            <div class="grupo-form">
+                <input class="campo-form" type="text" placeholder="Nome" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button class="bt" type="submit">Enviar via WhatsApp</button>
+        </form>
+
+    </section>
+
+    <script>
+    function enviarWats(event){
+        event.preventDefault()
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone = "5532988532602"
+
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+        const msgFormatada = encodeURIComponent(texto)
+
+        const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
+
+        console.log(url)
+
+        window.open(url, "_blank")
+    }
+
+        
+    </script>
+
+</body>
+</html>
